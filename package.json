@@ -1,0 +1,30 @@
+{
+  "name": "react-native-pull-to-refresh-list",
+  "version": "1.0.0",
+  "description": "react native android pull to refresh",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "android",
+    "pull",
+    "to",
+    "refresh"
+  ],
+  "author": {
+    "name": "Yuzi",
+    "email": "75667980@qq.com",
+    "url": "http://www.Yuzi.me"
+  },
+  "dependencies": {
+    "react-native-smart-timer-enhance": "^1.0.2"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yuzi-me/react-native-pull-to-refresh-list.git"
+  }
+}
