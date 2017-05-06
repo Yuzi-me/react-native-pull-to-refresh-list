@@ -5,7 +5,7 @@
 [![npm](https://img.shields.io/npm/dt/react-native-pull-to-refresh-list.svg)](https://www.npmjs.com/package/react-native-pull-to-refresh-list)
 [![npm](https://img.shields.io/npm/l/react-native-pull-to-refresh-list.svg)](https://github.com/react-native-component/react-native-pull-to-refresh-listview/blob/master/LICENSE)
 
-React Native 下拉刷新和上拉加载，IOS是用纯JS编写；Android是用纯JS和Java编写
+React Native 下拉刷新和上拉加载，IOS是用纯JS编写；Android是用纯JS和Java编写。解决了android listview大数据下拉刷新效果体验。
 
 此组件目前测试通过版本为 React Native 0.43，其他 React Native 各个版本暂未测试，望各位高手遇到兼容性问题，留言或者提问给我，我愿与你一起解决问题。
 
