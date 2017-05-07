@@ -123,7 +123,7 @@ import {
 import NavBar from './Navbar'
 import PullToRefreshListView from 'react-native-pull-to-refresh-list'
 
-class SmartPullToRefreshListView extends Component {
+class PullToRefreshListViewDemo extends Component {
 
   // 构造 
   constructor(props) {
@@ -374,7 +374,7 @@ const style = StyleSheet.create({
 
 })
 
-export default SmartPullToRefreshListView;
+export default PullToRefreshListViewDemo;
 ```
 
 ## 属性设置
