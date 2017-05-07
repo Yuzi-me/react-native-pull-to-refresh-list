@@ -210,6 +210,11 @@ class PullToRefreshListView extends Component {
         )
     }
 
+    // On Yuzi Add
+    componentWillUnmount() {
+        this.timer && clearTimeout(this.timer);
+    }
+
     componentDidMount() {
         let { renderSectionHeader, listSectionProps, dataSource } = this.props
         //android float section header
@@ -583,11 +588,13 @@ class PullToRefreshListView extends Component {
                 this._refreshBackAnimationFrame = this.requestAnimationFrame(this._resetLoadMoreScrollTop)
             }
         }
-        ToastAndroid.show("刷新成功!", ToastAndroid.SHORT);
+        // On Yuzi Add
         this.timer = setTimeout(() => {
-            //this._swipeRefreshLayout.refreshComplete();
             this.refs.ptrs.refreshComplete();
         }, 1500);
+        this.timer = setTimeout(() => {
+            ToastAndroid.show("刷新成功!", ToastAndroid.SHORT);
+        }, 1000);
     }
 
     _setPaddingBlank = (paddingDisabled) => {
