@@ -28,6 +28,17 @@ npm install react-native-pull-to-refresh-list --save
 react-native link react-native-pull-to-refresh-list
 ```
 
+运行以上命令，还需要手动配置以下文件
+
+* In `android/settings.gradle`
+```
+...
+maven {
+    url "$rootDir/../node_modules/react-native/android"
+}
+maven { url "https://jitpack.io" }  //used for react-native-pull-to-refresh-list
+```
+
 
 ## 手动配置 (Android)
 
