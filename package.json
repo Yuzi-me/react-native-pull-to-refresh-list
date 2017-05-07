@@ -1,6 +1,6 @@
 {
   "name": "react-native-pull-to-refresh-list",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react native android pull to refresh",
   "main": "index.js",
   "scripts": {
