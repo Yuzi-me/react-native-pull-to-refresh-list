@@ -117,7 +117,9 @@ class PullToRefreshListView extends Component {
 
     constructor(props) {
         super(props)
-        this.state = {}
+        this.state = {
+            resist: 20  // Yuzi Add
+        }
         let { refresh_none, load_more_none } = viewState
 
         if (props.autoLoadMore && props.viewType == viewType.listView) {
@@ -160,6 +162,7 @@ class PullToRefreshListView extends Component {
     }
 
     render() {
+        let { resist } = this.props;      // Yuzi Add
         return (
             <AndroidSwipeRefreshLayout
                 //ref={component => this._swipeRefreshLayout = component}
@@ -168,7 +171,15 @@ class PullToRefreshListView extends Component {
                 enabledPullUp={this.props.enabledPullUp}
                 enabledPullDown={this.props.enabledPullDown}
                 onSwipe={this._onSwipe}
-                onRefresh={this._onRefresh}>
+                onRefresh={this._onRefresh}
+                // Yuzi Add
+                durationToCloseHeader={300}
+                durationToClose={200}
+                resistance={this.state.resist}
+                pinContent={false}
+                ratioOfHeaderHeightToRefresh={1.2}
+                pullToRefresh={false}
+                keepHeaderWhenRefresh={true}>
                 {this.props.viewType == viewType.scrollView ?
                     <ScrollView
                         ref={component => this._scrollView = component}
@@ -237,6 +248,10 @@ class PullToRefreshListView extends Component {
     }
 
     beginRefresh = (bounceDisabled) => {
+        // Yuzi Add
+        this.state = {
+            resist: 2
+        }
         // this._swipeRefreshLayout.setNativeProps({
         //     refreshing: true,
         // })
