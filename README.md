@@ -10,11 +10,11 @@ React Native 下拉刷新和上拉加载，IOS是用纯JS编写；Android是用�
 此组件目前测试通过版本为 React Native 0.43，其他 React Native 各个版本暂未测试，望各位高手遇到兼容性问题，留言或者提问给我，我愿与你一起解决问题。
 
 ## DEMO
-<div style="width:45px;">
-![react-native-pull-to-refresh-list-demo-ios][1]
+<div style="width:45%;">
+<img src="https://github.com/Yuzi-me/react-native-pull-to-refresh-list-demo/raw/master/src/img/ios.gif" alt="">
 </div>
-<div style="width:45px;">
-![react-native-pull-to-refresh-list-demo-android][2]
+<div style="width:45%;">
+<img src="https://github.com/Yuzi-me/react-native-pull-to-refresh-list-demo/raw/master/src/img/android.gif" alt="">
 </div>
 
 
