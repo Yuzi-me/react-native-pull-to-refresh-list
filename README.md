@@ -11,8 +11,8 @@ React Native 下拉刷新和上拉加载，IOS是用纯JS编写；Android是用�
 
 ## DEMO
 
-![react-native-pull-to-refresh-listview-preview-ios][1]
-![react-native-pull-to-refresh-listview-preview-android][2]
+![react-native-pull-to-refresh-list-demo-ios][1]
+![react-native-pull-to-refresh-list-demo-android][2]
 
 
 ## 安装
@@ -96,7 +96,7 @@ protected List<ReactPackage> getPackages() {
 
 ## 案例
 
-see [react-native-pull-to-refresh][0]
+see [react-native-pull-to-refresh-list-demo][0]
 
 
 
@@ -412,8 +412,8 @@ listSectionProps        | object | Yes      |           | see [react-native docu
 
 
 
-[0]: https://github.com/Yuzi-me/react-native-pull-to-refresh
-[1]: http://cyqresig.github.io/img/react-native-smart-pull-to-refresh-preview-v1.6.0.gif
-[2]: http://cyqresig.github.io/img/react-native-smart-pull-to-refresh-preview-android-v1.6.0.gif
+[0]: https://github.com/Yuzi-me/react-native-pull-to-refresh-list-demo
+[1]: https://github.com/Yuzi-me/react-native-pull-to-refresh-list-demo/raw/master/src/img/android.gif
+[2]: https://github.com/Yuzi-me/react-native-pull-to-refresh-list-demo/raw/master/src/img/ios.gif
 [3]: http://facebook.github.io/react-native/docs/listview.html#props
 [4]: http://facebook.github.io/react-native/docs/view.html#props
