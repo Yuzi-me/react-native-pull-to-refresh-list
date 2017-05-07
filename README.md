@@ -11,8 +11,8 @@ React Native 下拉刷新和上拉加载，IOS是用纯JS编写；Android是用�
 
 ## DEMO
 <div>
-<img src="https://github.com/Yuzi-me/react-native-pull-to-refresh-list-demo/raw/master/src/img/ios.gif" alt="" width="45%">
-<img src="https://github.com/Yuzi-me/react-native-pull-to-refresh-list-demo/raw/master/src/img/android.gif" alt="" width="48.15%">
+<img src="https://github.com/Yuzi-me/react-native-pull-to-refresh-list-demo/raw/master/src/img/ios.gif" alt="" width="40%">
+<img src="https://github.com/Yuzi-me/react-native-pull-to-refresh-list-demo/raw/master/src/img/android.gif" alt="" width="42.75%%">
 </div>
 
 
