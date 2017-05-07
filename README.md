@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/v/react-native-pull-to-refresh-list.svg)](https://www.npmjs.com/package/react-native-pull-to-refresh-list)
 [![npm](https://img.shields.io/npm/dm/react-native-pull-to-refresh-list.svg)](https://www.npmjs.com/package/react-native-pull-to-refresh-list)
 [![npm](https://img.shields.io/npm/dt/react-native-pull-to-refresh-list.svg)](https://www.npmjs.com/package/react-native-pull-to-refresh-list)
-[![npm](https://img.shields.io/npm/l/react-native-pull-to-refresh-list.svg)](https://github.com/react-native-component/react-native-pull-to-refresh-listview/blob/master/LICENSE)
+[![npm](https://img.shields.io/npm/l/react-native-pull-to-refresh-list.svg)](https://github.com/yuzi-me/react-native-pull-to-refresh-list/blob/master/LICENSE)
 
 React Native 下拉刷新和上拉加载，IOS是用纯JS编写；Android是用纯JS和Java编写。解决了Android listview大数据下拉刷新效果体验。
 
@@ -106,21 +106,20 @@ see [react-native-pull-to-refresh-list-demo][0]
 ```js
 import React, { Component } from 'react';
 import {
-  View,
-  Text,
-  StyleSheet,
-  Alert,
-  StatusBar,
-  ScrollView,
-  ListView,
-  Image,
-  ActivityIndicator,
-  ProgressBarAndroid,
-  ActivityIndicatorIOS,
-  Platform,
-  ToolbarAndroid
+    View,
+    Text,
+    StyleSheet,
+    Alert,
+    StatusBar,
+    ScrollView,
+    ListView,
+    Image,
+    ActivityIndicator,
+    ProgressBarAndroid,
+    ActivityIndicatorIOS,
+    Platform,
+    ToolbarAndroid
 } from 'react-native'
-import NavBar from './Navbar'
 import PullToRefreshListView from 'react-native-pull-to-refresh-list'
 
 class PullToRefreshListViewDemo extends Component {
@@ -130,16 +129,16 @@ class PullToRefreshListViewDemo extends Component {
     super(props);
 
     this._dataSource = new ListView.DataSource({
-      rowHasChanged: (r1, r2) => r1 !== r2,
-      //sectionHeaderHasChanged: (s1, s2) => s1 !== s2, 
+    rowHasChanged: (r1, r2) => r1 !== r2,
+    //sectionHeaderHasChanged: (s1, s2) => s1 !== s2, 
     });
 
     let dataList = []
 
     this.state = {
-      first: true,
-      dataList: dataList,
-      dataSource: this._dataSource.cloneWithRows(dataList),
+    first: true,
+    dataList: dataList,
+    dataSource: this._dataSource.cloneWithRows(dataList),
     }
   }
 
